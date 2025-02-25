@@ -11,6 +11,9 @@ Backend project with MERN and Mongo
   - Add new requests
   - Select the url and set it to be a variable, scoped to the collection
   - Make sure to save the request before creating a new one
+  - On the APi page, click Postbot, can use AI to write documentation and tests. This is now viewable at the documentation page from the collections view
+  - Can use postman for tests too, run the entire test suite, generate random values within request body using `{{$randomCity}}` `{{$randomPrice}}` etc.
+  - Can share postman docs with frontend devs
 
 ## Express
 
@@ -42,4 +45,4 @@ Express docs: https://expressjs.com/en/5x/api.html#req.body
 - When deploying to digitalOcean app platform, we cannot hardcode port numbers. We need to pick an appropriate port number based on the runtime environment.
 - https://www.npmjs.com/package/dotenv
 - `const port = process.env.PORT || 3000`
-- Create a .env file but don't push it to github
+- Create a .env file but don't push it to github. Now on DO we get the env from the runtime.
