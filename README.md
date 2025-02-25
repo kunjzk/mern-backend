@@ -36,3 +36,10 @@ Express docs: https://expressjs.com/en/5x/api.html#req.body
 - Filter data using `object.find(predicate, i.e (t) => t.id === req.body.id)`
 - Extract data from request body using curly brace notation for succinctness
 - Delete data from array by first finding its index (use `findIndex`) and then calling `splice`
+
+## Deploying
+
+- When deploying to digitalOcean app platform, we cannot hardcode port numbers. We need to pick an appropriate port number based on the runtime environment.
+- https://www.npmjs.com/package/dotenv
+- `const port = process.env.PORT || 3000`
+- Create a .env file but don't push it to github
