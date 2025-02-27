@@ -53,3 +53,11 @@ Express docs: https://expressjs.com/en/5x/api.html#req.body
 - Use winston to create a logger that can parse custom formatted logs and forward them anywhere (console, db, file) and morgan to define a custom log format.
 - Export your winston logger and then import it in your main scripts. Now insead of using `console.log` use `logger.info` etc to get pretty printed logs with useful information.
 - Use `app.use(function)` to create middleware. That simple.
+
+## Idea to database design
+
+- Just to buld an MVP, no need to consider scaling right now
+- Go from problem statement to database design first
+- Tools: Eraser, Moon moddeler (allows export to SQL)
+  - Eraser: Diagrams with code. Has own syntax. `<` is for one to many relationships, `>` is for many to one, `-` is for one to one.
+  - 3 examples here (todo app, ecommerce app, hospital management system): https://app.eraser.io/workspace/ipT2N0NZGB6zsaTz5410?origin=share
