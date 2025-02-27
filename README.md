@@ -46,3 +46,10 @@ Express docs: https://expressjs.com/en/5x/api.html#req.body
 - https://www.npmjs.com/package/dotenv
 - `const port = process.env.PORT || 3000`
 - Create a .env file but don't push it to github. Now on DO we get the env from the runtime.
+
+## Better logging
+
+- Use `winston` and `morgan`. Guide: https://docs.chaicode.com/advance-node-logger/
+- Use winston to create a logger that can parse custom formatted logs and forward them anywhere (console, db, file) and morgan to define a custom log format.
+- Export your winston logger and then import it in your main scripts. Now insead of using `console.log` use `logger.info` etc to get pretty printed logs with useful information.
+- Use `app.use(function)` to create middleware. That simple.
